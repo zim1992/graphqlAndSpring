@@ -1,0 +1,859 @@
+[1mApache Maven 3.5.2[m
+Maven home: /usr/share/maven
+Java version: 10.0.2, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-11-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-39-generic", arch: "amd64", family: "unix"
+[[1;36mDEBUG[m] Created new class realm maven.api
+[[1;36mDEBUG[m] Importing foreign packages into class realm maven.api
+[[1;36mDEBUG[m]   Imported: javax.annotation.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.enterprise.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.enterprise.util.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.classrealm < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.cli < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.exception < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution.scope < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.model < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.monitor < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.plugin < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.profiles < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.project < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.reporting < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.rtinfo < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.settings < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.toolchain < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.usability < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.events < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.observers < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.resource < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.component < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.container < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.context < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.logging < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.personality < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.collection < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.deployment < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.graph < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.installation < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.metadata < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.resolution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.spi < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.transfer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.version < plexus.core
+[[1;36mDEBUG[m]   Imported: org.fusesource.jansi.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.helpers.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.spi.* < plexus.core
+[[1;36mDEBUG[m] Populating class realm maven.api
+[[1;34mINFO[m] Error stacktraces are turned on.
+[[1;36mDEBUG[m] Message scheme: color
+[[1;36mDEBUG[m] Message styles: [1;36mdebug[m [1;34minfo[m [1;33mwarning[m [1;31merror[m [1;32msuccess[m [1;31mfailure[m [1mstrong[m [32mmojo[m [36mproject[m
+[[1;36mDEBUG[m] Reading global settings from /usr/share/maven/conf/settings.xml
+[[1;36mDEBUG[m] Reading user settings from /home/corjan/.m2/settings.xml
+[[1;36mDEBUG[m] Reading global toolchains from /usr/share/maven/conf/toolchains.xml
+[[1;36mDEBUG[m] Reading user toolchains from /home/corjan/.m2/toolchains.xml
+[[1;36mDEBUG[m] Using local repository at /home/corjan/.m2/repository
+[[1;36mDEBUG[m] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/corjan/.m2/repository
+[[1;34mINFO[m] Scanning for projects...
+[[1;36mDEBUG[m] Extension realms for project graphql:graphqljava:jar:1.0-SNAPSHOT: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:2.1.0.RELEASE: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:2.1.0.RELEASE: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for graphql:graphqljava:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-tomcat:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 37, column 22
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;36mDEBUG[m] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[[1;36mDEBUG[m] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM graphql:graphqljava:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m] === REACTOR BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project: graphql:graphqljava:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m] Tasks:   [spring-boot:run]
+[[1;36mDEBUG[m] Style:   Regular
+[[1;36mDEBUG[m] =======================================================================
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding first_graphql_application 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;36mDEBUG[m] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[[1;36mDEBUG[m] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM graphql:graphqljava:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] === PROJECT BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project:       graphql:graphqljava:1.0-SNAPSHOT
+[[1;36mDEBUG[m] Dependencies (collect): []
+[[1;36mDEBUG[m] Dependencies (resolve): [test]
+[[1;36mDEBUG[m] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] --- init fork of graphql:graphqljava:1.0-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:2.1.0.RELEASE:run (default-cli) ---
+[[1;36mDEBUG[m] Dependencies (collect): []
+[[1;36mDEBUG[m] Dependencies (resolve): [compile, test]
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources (default-resources)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.1.0:testResources (default-testResources)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[[1;36mDEBUG[m] --- exit fork of graphql:graphqljava:1.0-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:2.1.0.RELEASE:run (default-cli) ---
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.springframework.boot:spring-boot-maven-plugin:2.1.0.RELEASE:run (default-cli)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addResources default-value="false">${spring-boot.run.addResources}</addResources>
+  <agent>${spring-boot.run.agent}</agent>
+  <arguments>${spring-boot.run.arguments}</arguments>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>${spring-boot.excludes}</excludes>
+  <folders>${spring-boot.run.folders}</folders>
+  <fork>${spring-boot.run.fork}</fork>
+  <includes>${spring-boot.includes}</includes>
+  <jvmArguments>${spring-boot.run.jvmArguments}</jvmArguments>
+  <mainClass>${start-class}</mainClass>
+  <noverify>${spring-boot.run.noverify}</noverify>
+  <profiles>${spring-boot.run.profiles}</profiles>
+  <project default-value="${project}"/>
+  <skip default-value="false">${spring-boot.run.skip}</skip>
+  <useTestClasspath default-value="false">${spring-boot.run.useTestClasspath}</useTestClasspath>
+  <workingDirectory>${spring-boot.run.workingDirectory}</workingDirectory>
+</configuration>
+[[1;36mDEBUG[m] =======================================================================
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:2.1.0.RELEASE:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mgraphqljava[0;1m >>>[m
+[[1;36mDEBUG[m] Could not find metadata org.springframework.boot:spring-boot-starter-tomcat/maven-metadata.xml in local (/home/corjan/.m2/repository)
+[[1;36mDEBUG[m] Skipped remote request for org.springframework.boot:spring-boot-starter-tomcat/maven-metadata.xml, locally cached metadata up-to-date.
+[[1;36mDEBUG[m] Could not find metadata org.springframework.boot:spring-boot-starter-tomcat/maven-metadata.xml in local (/home/corjan/.m2/repository)
+[[1;36mDEBUG[m] Skipped remote request for org.springframework.boot:spring-boot-starter-tomcat/maven-metadata.xml, locally cached metadata up-to-date.
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=2715470, ConflictMarker.markTime=1093562, ConflictMarker.nodeCount=121, ConflictIdSorter.graphTime=1274341, ConflictIdSorter.topsortTime=892800, ConflictIdSorter.conflictIdCount=63, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=15081541, ConflictResolver.conflictItemCount=111, DefaultDependencyCollector.collectTime=822548714, DefaultDependencyCollector.transformTime=24284227}
+[[1;36mDEBUG[m] graphql:graphqljava:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-web:jar:2.1.0.RELEASE:compile
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter:jar:2.1.0.RELEASE:compile (version managed from 2.1.0.RELEASE)
+[[1;36mDEBUG[m]          org.springframework.boot:spring-boot-starter-logging:jar:2.1.0.RELEASE:compile (version managed from 2.1.0.RELEASE)
+[[1;36mDEBUG[m]             ch.qos.logback:logback-classic:jar:1.2.3:compile (version managed from 1.2.3)
+[[1;36mDEBUG[m]                ch.qos.logback:logback-core:jar:1.2.3:compile (version managed from 1.2.3)
+[[1;36mDEBUG[m]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.1:compile (version managed from 2.11.1)
+[[1;36mDEBUG[m]                org.apache.logging.log4j:log4j-api:jar:2.11.1:compile (version managed from 2.11.1)
+[[1;36mDEBUG[m]             org.slf4j:jul-to-slf4j:jar:1.7.25:compile (version managed from 1.7.25)
+[[1;36mDEBUG[m]          org.springframework:spring-core:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]             org.springframework:spring-jcl:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]          org.yaml:snakeyaml:jar:1.23:runtime (version managed from 1.23)
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter-json:jar:2.1.0.RELEASE:compile (version managed from 2.1.0.RELEASE)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile (version managed from 2.9.7)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile (version managed from 2.9.7)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile (version managed from 2.9.7)
+[[1;36mDEBUG[m]       org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile (version managed from 6.0.13.Final)
+[[1;36mDEBUG[m]          javax.validation:validation-api:jar:2.0.1.Final:compile (version managed from 2.0.1.Final)
+[[1;36mDEBUG[m]          org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile (version managed from 3.3.2.Final)
+[[1;36mDEBUG[m]          com.fasterxml:classmate:jar:1.4.0:compile (version managed from 1.3.4)
+[[1;36mDEBUG[m]       org.springframework:spring-web:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]          org.springframework:spring-beans:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]       org.springframework:spring-webmvc:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]          org.springframework:spring-aop:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]          org.springframework:spring-context:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]          org.springframework:spring-expression:jar:5.1.2.RELEASE:compile (version managed from 5.1.2.RELEASE)
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-tomcat:jar:LATEST:compile
+[[1;36mDEBUG[m]       javax.annotation:javax.annotation-api:jar:1.3.2:compile (version managed from 1.3.2)
+[[1;36mDEBUG[m]       org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.12:compile (version managed from 9.0.12)
+[[1;36mDEBUG[m]       org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.12:compile (version managed from 9.0.12)
+[[1;36mDEBUG[m]       org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.12:compile (version managed from 9.0.12)
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-devtools:jar:2.1.0.RELEASE:compile
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot:jar:2.1.0.RELEASE:compile (version managed from 2.1.0.RELEASE)
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RELEASE:compile (version managed from 2.1.0.RELEASE)
+[[1;36mDEBUG[m]    com.graphql-java:graphql-java-tools:jar:4.3.0:compile
+[[1;36mDEBUG[m]       org.jetbrains.kotlin:kotlin-stdlib:jar:1.2.71:compile (version managed from 1.1.60)
+[[1;36mDEBUG[m]          org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.2.71:compile
+[[1;36mDEBUG[m]          org.jetbrains:annotations:jar:13.0:compile
+[[1;36mDEBUG[m]       com.graphql-java:graphql-java:jar:6.0:compile
+[[1;36mDEBUG[m]          org.antlr:antlr4-runtime:jar:4.5.1:compile
+[[1;36mDEBUG[m]          com.graphql-java:java-dataloader:jar:2.0.1:compile
+[[1;36mDEBUG[m]          org.reactivestreams:reactive-streams:jar:1.0.2:compile (version managed from 1.0.1)
+[[1;36mDEBUG[m]       com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile (version managed from 2.8.8)
+[[1;36mDEBUG[m]       com.fasterxml.jackson.module:jackson-module-kotlin:jar:2.9.7:compile (version managed from 2.8.8)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile (version managed from 2.9.0)
+[[1;36mDEBUG[m]          org.jetbrains.kotlin:kotlin-reflect:jar:1.2.71:compile (version managed from 1.2.51)
+[[1;36mDEBUG[m]       com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile (version managed from 2.8.8)
+[[1;36mDEBUG[m]       com.esotericsoftware:reflectasm:jar:1.11.3:compile
+[[1;36mDEBUG[m]          org.ow2.asm:asm:jar:5.0.4:compile
+[[1;36mDEBUG[m]       org.apache.commons:commons-lang3:jar:3.8.1:compile (version managed from 3.6)
+[[1;36mDEBUG[m]       com.google.guava:guava:jar:21.0:compile
+[[1;36mDEBUG[m]       org.slf4j:slf4j-api:jar:1.7.25:compile (version managed from 1.7.25)
+[[1;36mDEBUG[m]    com.graphql-java:graphql-spring-boot-starter:jar:4.0.0:compile
+[[1;36mDEBUG[m]       com.graphql-java:graphql-spring-boot-autoconfigure:jar:4.0.0:compile
+[[1;36mDEBUG[m]          org.springframework.boot:spring-boot-configuration-processor:jar:2.1.0.RELEASE:compile (version managed from 2.0.0.RELEASE)
+[[1;36mDEBUG[m]          com.graphql-java:graphql-java-servlet:jar:4.6.0:compile
+[[1;36mDEBUG[m]             javax.servlet:javax.servlet-api:jar:4.0.1:compile (version managed from 3.0.1)
+[[1;36mDEBUG[m]             commons-fileupload:commons-fileupload:jar:1.3.1:compile
+[[1;36mDEBUG[m]                commons-io:commons-io:jar:2.2:compile
+[[1;36mDEBUG[m]    com.graphql-java:graphiql-spring-boot-starter:jar:4.0.0:compile
+[[1;36mDEBUG[m]       com.graphql-java:graphiql-spring-boot-autoconfigure:jar:4.0.0:compile
+[[1;36mDEBUG[m]          org.apache.commons:commons-text:jar:1.1:compile
+[[1;36mDEBUG[m]    org.projectlombok:lombok:jar:1.16.20:compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mgraphqljava[0;1m ---[m
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=590328, ConflictMarker.markTime=173553, ConflictMarker.nodeCount=68, ConflictIdSorter.graphTime=210880, ConflictIdSorter.topsortTime=61917, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1859789, ConflictResolver.conflictItemCount=67, DefaultDependencyCollector.collectTime=332044489, DefaultDependencyCollector.transformTime=3099117}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-resources-plugin:jar:3.1.0:
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-artifact:jar:3.0:compile
+[[1;36mDEBUG[m]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[[1;36mDEBUG[m]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[[1;36mDEBUG[m]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[[1;36mDEBUG[m]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[[1;36mDEBUG[m]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[[1;36mDEBUG[m]       org.sonatype.aether:aether-api:jar:1.7:compile
+[[1;36mDEBUG[m]       org.sonatype.aether:aether-util:jar:1.7:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[[1;36mDEBUG[m]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-model:jar:3.0:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-filtering:jar:3.1.1:compile
+[[1;36mDEBUG[m]       org.apache.maven.shared:maven-shared-utils:jar:3.0.0:compile
+[[1;36mDEBUG[m]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[[1;36mDEBUG[m]    commons-io:commons-io:jar:2.5:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-interpolation:jar:1.24:compile
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.1.0
+[[1;36mDEBUG[m]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[[1;36mDEBUG[m]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[[1;36mDEBUG[m]   Included: org.sonatype.aether:aether-util:jar:1.7
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-filtering:jar:3.1.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.0.0
+[[1;36mDEBUG[m]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.5
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.24
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@1de0aca6]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources' with basic configurator -->
+[[1;36mDEBUG[m]   (f) addDefaultExcludes = true
+[[1;36mDEBUG[m]   (f) buildFilters = []
+[[1;36mDEBUG[m]   (s) delimiters = [@]
+[[1;36mDEBUG[m]   (f) encoding = UTF-8
+[[1;36mDEBUG[m]   (f) escapeWindowsPaths = true
+[[1;36mDEBUG[m]   (f) fileNameFiltering = false
+[[1;36mDEBUG[m]   (s) includeEmptyDirs = false
+[[1;36mDEBUG[m]   (s) outputDirectory = /home/corjan/graphqljava/target/classes
+[[1;36mDEBUG[m]   (s) overwrite = false
+[[1;36mDEBUG[m]   (f) project = MavenProject: graphql:graphqljava:1.0-SNAPSHOT @ /home/corjan/graphqljava/pom.xml
+[[1;36mDEBUG[m]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /home/corjan/graphqljava/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /home/corjan/graphqljava/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@ad3324b
+[[1;36mDEBUG[m]   (f) skip = false
+[[1;36mDEBUG[m]   (f) supportMultiLineFiltering = false
+[[1;36mDEBUG[m]   (f) useBuildFilters = true
+[[1;36mDEBUG[m]   (s) useDefaultDelimiters = false
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] properties used {spring-integration.version=5.1.0.RELEASE, flyway.version=5.2.1, java.specification.version=10, webjars-hal-browser.version=3325375, java.vendor.url=http://java.oracle.com/, jna.version=4.5.2, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run -X, jdk.debug=release, env.SSH_AGENT_PID=5138, maven.version=3.5.2, javax-activation.version=1.2.0, kafka.version=2.0.0, jboss-transaction-spi.version=7.6.0.Final, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, exec-maven-plugin.version=1.6.0, maven-install-plugin.version=2.5.2, byte-buddy.version=1.9.3, java.runtime.version=10.0.2+13-Ubuntu-1ubuntu0.18.04.3, micrometer.version=1.1.0, rxjava-adapter.version=1.2.1, project.baseUri=file:/home/corjan/graphqljava/, hibernate.version=5.3.7.Final, java.io.tmpdir=/tmp, java.version=10.0.2, javax-persistence.version=2.2, build-helper-maven-plugin.version=3.0.0, mockito.version=2.23.0, java.vm.specification.name=Java Virtual Machine Specification, infinispan.version=9.4.0.Final, nekohtml.version=1.9.22, maven-assembly-plugin.version=3.1.0, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Oracle Corporation, spring-cloud-connectors.version=2.0.3.RELEASE, thymeleaf-extras-java8time.version=3.0.1.RELEASE, undertow.version=2.0.14.Final, mariadb.version=2.3.0, env.XAUTHORITY=/run/user/1000/gdm/Xauthority, selenium-htmlunit.version=2.33.0, thymeleaf-extras-data-attribute.version=2.0.1, ehcache3.version=3.6.1, commons-dbcp2.version=2.5.0, env.LANG=en_US.UTF-8, mongodb.version=3.8.2, couchbase-cache-client.version=2.1.0, env.LC_MONETARY=nl_NL.UTF-8, env.XDG_DATA_DIRS=/usr/share/ubuntu:/home/corjan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop, user.timezone=, java.vm.specification.version=10, javax-transaction.version=1.3, maven.compiler.source=1.8, user.home=/home/corjan, spring.version=5.1.2.RELEASE, postgresql.version=42.2.5, reactive-streams.version=1.0.2, env.DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus, jmustache.version=1.14, querydsl.version=4.2.1, appengine-sdk.version=1.9.67, thymeleaf-layout-dialect.version=2.3.0, hamcrest.version=1.3, os.version=4.15.0-39-generic, commons-pool.version=1.6, java.vm.name=OpenJDK 64-Bit Server VM, maven-help-plugin.version=3.1.0, env.LC_ADDRESS=nl_NL.UTF-8, mimepull.version=1.9.10, json-path.version=2.4.0, jaxen.version=1.1.6, johnzon.version=1.1.10, env.USERNAME=corjan, os.arch=amd64, spring-batch.version=4.1.0.RELEASE, couchbase-client.version=2.7.0, derby.version=10.14.2.0, env.DESKTOP_SESSION=ubuntu, jest.version=6.3.1, javax-jsonb.version=1.0, rxjava2.version=2.2.3, neo4j-ogm.version=3.1.4, javax-jaxws.version=2.3.1, pooled-jms-version=1.0.3, maven-site-plugin.version=3.7.1, awt.toolkit=sun.awt.X11.XToolkit, flatten-maven-plugin.version=1.0.1, javax-websocket.version=1.1, env.TEXTDOMAINDIR=/usr/share/locale/, commons-codec.version=1.11, env.DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, caffeine.version=2.6.2, dom4j.version=1.6.1, h2.version=1.4.197, env.GIO_LAUNCHED_DESKTOP_FILE=/home/corjan/.local/share/applications/jetbrains-idea-ce.desktop, env.GDMSESSION=ubuntu, java.vm.compressedOopsMode=32-bit, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, unboundid-ldapsdk.version=4.0.8, thymeleaf-extras-springsecurity.version=3.0.4.RELEASE, javax-jaxb.version=2.3.1, sqlite-jdbc.version=3.25.2, env.LC_TELEPHONE=nl_NL.UTF-8, activemq.version=5.15.7, httpasyncclient.version=4.1.4, jtds.version=1.3.1, javax-jms.version=2.0.1, env.LOGNAME=corjan, spring-security.version=5.1.1.RELEASE, hibernate-validator.version=6.0.13.Final, assertj.version=3.11.1, env.XDG_VTNR=2, env.SSH_AUTH_SOCK=/run/user/1000/keyring/ssh, influxdb-java.version=2.14, env.XMODIFIERS=@im=ibus, sun.os.patch.level=unknown, lombok.version=1.18.2, maven.compiler.target=1.8, library.jansi.path=/usr/share/maven/lib/jansi-native, commons-pool2.version=2.6.0, env.LC_MEASUREMENT=nl_NL.UTF-8, spring-retry.version=1.2.2.RELEASE, env.QT_IM_MODULE=ibus, maven-invoker-plugin.version=3.1.0, maven-antrun-plugin.version=1.8, maven.conf=/usr/share/maven/conf, sun.java.launcher=SUN_STANDARD, user.country=US, env.MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, resource.delimiter=@, javax-json.version=1.1.3, jboss-logging.version=3.3.2.Final, maven-resources-plugin.version=3.1.0, env.XDG_MENU_PREFIX=gnome-, javax-validation.version=2.0.1.Final, netty.version=4.1.29.Final, jetty-jsp.version=2.2.0.v201112011158, maven-source-plugin.version=3.0.1, jetty.version=9.4.12.v20180830, rxjava.version=1.3.8, elasticsearch.version=6.4.2, java.runtime.name=OpenJDK Runtime Environment, env.XDG_SESSION_ID=2, rest-assured.version=3.1.1, maven-deploy-plugin.version=2.8.2, env.MAVEN_CMD_LINE_ARGS= spring-boot:run -X, log4j2.version=2.11.1, maven-failsafe-plugin.version=2.22.1, spring-framework.version=5.1.2.RELEASE, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg, env.QT4_IM_MODULE=xim, dropwizard-metrics.version=4.0.3, git-commit-id-plugin.version=2.2.5, hazelcast-hibernate5.version=1.2.3, htmlunit.version=2.33, env.TERM=xterm-256color, sun.cpu.isalist=, jackson.version=2.9.7, sun.arch.data.model=64, spring-restdocs.version=2.0.2.RELEASE, freemarker.version=2.3.28, thymeleaf.version=3.0.11.RELEASE, janino.version=3.0.10, env.TEXTDOMAIN=im-config, maven-jar-plugin.version=3.1.0, maven-compiler-plugin.version=3.8.0, java.specification.vendor=Oracle Corporation, bitronix.version=2.1.4, rabbit-amqp-client.version=5.4.3, java.version.date=2018-07-17, spring-amqp.version=2.1.0.RELEASE, java.home=/usr/lib/jvm/java-11-openjdk-amd64, spring-plugin.version=1.2.0.RELEASE, maven-war-plugin.version=3.2.2, env.GJS_DEBUG_OUTPUT=stderr, jolokia.version=1.6.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jetty-reactive-httpclient.version=1.0.1, env.PATH=/home/corjan/bin:/home/corjan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin, httpclient.version=4.5.6, maven-dependency-plugin.version=3.1.1, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:, env.XDG_SEAT=seat0, jsonassert.version=1.5.0, env.CLUTTER_IM_MODULE=xim, file.encoding=UTF-8, gson.version=2.8.5, sun-mail.version=1.6.2, env.LC_IDENTIFICATION=nl_NL.UTF-8, env.LC_NUMERIC=nl_NL.UTF-8, env._=/usr/bin/mvn, nio-multipart-parser.version=1.1.0, env.XDG_SESSION_DESKTOP=ubuntu, env.SHLVL=1, mssql-jdbc.version=6.4.0.jre8, snakeyaml.version=1.23, liquibase.version=3.6.2, java.awt.printerjob=sun.print.PSPrinterJob, httpcore.version=4.4.10, lettuce.version=5.1.2.RELEASE, org.slf4j.simpleLogger.defaultLogLevel=debug, statsd-client.version=3.1.0, env.WINDOWPATH=2, env.IM_CONFIG_PHASE=2, classworlds.conf=/usr/share/maven/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, joda-time.version=2.10.1, sun.desktop=gnome, kotlin.version=1.2.71, wsdl4j.version=1.6.3, env.SESSION_MANAGER=local/corjan-K46CB:@/tmp/.ICE-unix/5033,unix/corjan-K46CB:/tmp/.ICE-unix/5033, tomcat.version=9.0.12, sendgrid.version=4.3.0, glassfish-jaxb.version=2.3.1, spring-ws.version=3.0.4.RELEASE, commons-lang3.version=3.8.1, os.name=Linux, junit.version=4.12, env.DISPLAY=:0, jetty-el.version=8.5.33, mongo-driver-reactivestreams.version=1.9.2, maven.build.timestamp=2018-11-17T10:58:54Z, reactor-bom.version=Californium-SR2, maven-enforcer-plugin.version=3.0.0-M2, env.GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1, jstl.version=1.2, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, quartz.version=2.3.0, javax-money.version=1.0.3, spring-hateoas.version=0.25.0.RELEASE, path.separator=:, env.GIO_LAUNCHED_DESKTOP_FILE_PID=31848, env.GJS_DEBUG_TOPICS=JS ERROR;JS LOG, env.SHELL=/bin/bash, env.LESSCLOSE=/usr/bin/lesspipe %s %s, env.GTK_MODULES=gail:atk-bridge, maven.multiModuleProjectDirectory=/home/corjan/graphqljava, env.MAVEN_PROJECTBASEDIR=/home/corjan/graphqljava, java.vm.info=mixed mode, cassandra-driver.version=3.6.0, env.USER=corjan, java.class.version=54.0, xml-maven-plugin.version=1.0.2, sun.jnu.encoding=UTF-8, xmlunit2.version=2.6.2, slf4j.version=1.7.25, solr.version=7.4.0, saaj-impl.version=1.5.0, maven.build.version=Apache Maven 3.5.2, hikaricp.version=3.2.0, maven.home=/usr/share/maven, netty-tcnative.version=2.0.17.Final, maven-shade-plugin.version=3.2.0, file.separator=/, env.GTK2_MODULES=overlay-scrollbar, line.separator=
+, spring-kafka.version=2.2.0.RELEASE, jersey.version=2.27, env.QT_QPA_PLATFORMTHEME=appmenu-qt5, user.name=corjan, env.LC_TIME=nl_NL.UTF-8, hazelcast.version=3.11, jdom2.version=2.0.6, atomikos.version=4.0.6, aspectj.version=1.9.2, spring-data-releasetrain.version=Lovelace-SR2, hsqldb.version=2.4.1, env.XDG_RUNTIME_DIR=/run/user/1000, webjars-locator-core.version=0.35, project.reporting.outputEncoding=UTF-8, xml-apis.version=1.4.01, env.XDG_SESSION_TYPE=x11, env.OLDPWD=/home/corjan/graphqljava, env.PWD=/home/corjan/graphqljava, file.encoding.pkg=sun.io, embedded-mongo.version=2.1.1, env.LESSOPEN=| /usr/bin/lesspipe %s, env.LC_NAME=nl_NL.UTF-8, johnzon-jsonb.version=1.1.10, spring-ldap.version=2.3.2.RELEASE, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, env.HOME=/home/corjan, java.vm.vendor=Oracle Corporation, maven-javadoc-plugin.version=3.0.1, servlet-api.version=4.0.1, artemis.version=2.6.3, groovy.version=2.5.3, javax-cache.version=1.1.0, logback.version=1.2.3, env.QT_ACCESSIBILITY=1, prometheus-pushgateway.version=0.5.0, sun.cpu.endian=little, versions-maven-plugin.version=2.7, user.language=en, jedis.version=2.9.0, maven-clean-plugin.version=3.1.0, javax-mail.version=1.6.2, maven-surefire-plugin.version=2.22.1, javax-annotation.version=1.3.2, env.GTK_IM_MODULE=ibus, env.LC_PAPER=nl_NL.UTF-8, mysql.version=8.0.13, classmate.version=1.4.0, jaybird.version=3.0.5, antlr2.version=2.7.7, selenium.version=3.14.0, glassfish-el.version=3.0.0, project.build.sourceEncoding=UTF-8, jooq.version=3.11.5, java.vendor.url.bug=http://bugreport.java.com/bugreport/, user.dir=/home/corjan/graphqljava, ehcache.version=2.10.6, env.XDG_CURRENT_DESKTOP=ubuntu:GNOME, junit-jupiter.version=5.3.1, java.vm.version=10.0.2+13-Ubuntu-1ubuntu0.18.04.3, spring-session-bom.version=Bean-RELEASE, env.GNOME_SHELL_SESSION_MODE=ubuntu}
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;36mDEBUG[m] resource with targetPath null
+directory /home/corjan/graphqljava/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[[1;36mDEBUG[m] ignoreDelta true
+[[1;34mINFO[m] Copying 0 resource
+[[1;36mDEBUG[m] resource with targetPath null
+directory /home/corjan/graphqljava/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[[1;36mDEBUG[m] ignoreDelta true
+[[1;34mINFO[m] Copying 1 resource
+[[1;36mDEBUG[m] Copying file petshop.graphqls
+[[1;36mDEBUG[m] file petshop.graphqls has a filtered file extension
+[[1;36mDEBUG[m] copy /home/corjan/graphqljava/src/main/resources/petshop.graphqls to /home/corjan/graphqljava/target/classes/petshop.graphqls
+[[1;36mDEBUG[m] no use filter components
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mgraphqljava[0;1m ---[m
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=626071, ConflictMarker.markTime=176362, ConflictMarker.nodeCount=118, ConflictIdSorter.graphTime=308092, ConflictIdSorter.topsortTime=115487, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2726388, ConflictResolver.conflictItemCount=72, DefaultDependencyCollector.collectTime=176144787, DefaultDependencyCollector.transformTime=4002420}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.0:
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model:jar:3.0:compile
+[[1;36mDEBUG[m]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[[1;36mDEBUG[m]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[[1;36mDEBUG[m]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-artifact:jar:3.0:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[[1;36mDEBUG[m]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[[1;36mDEBUG[m]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[[1;36mDEBUG[m]       org.sonatype.aether:aether-api:jar:1.7:compile
+[[1;36mDEBUG[m]       org.sonatype.aether:aether-util:jar:1.7:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[[1;36mDEBUG[m]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[[1;36mDEBUG[m]       commons-io:commons-io:jar:2.5:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-java:jar:0.9.10:compile
+[[1;36mDEBUG[m]       org.ow2.asm:asm:jar:6.2:compile
+[[1;36mDEBUG[m]       com.thoughtworks.qdox:qdox:jar:2.0-M9:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-api:jar:2.8.4:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4:runtime
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.0
+[[1;36mDEBUG[m]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[[1;36mDEBUG[m]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[[1;36mDEBUG[m]   Included: org.sonatype.aether:aether-util:jar:1.7
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.5
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-java:jar:0.9.10
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm:jar:6.2
+[[1;36mDEBUG[m]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M9
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.8.4
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@1de0aca6]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile' with basic configurator -->
+[[1;36mDEBUG[m]   (f) basedir = /home/corjan/graphqljava
+[[1;36mDEBUG[m]   (f) buildDirectory = /home/corjan/graphqljava/target
+[[1;36mDEBUG[m]   (f) compilePath = [/home/corjan/graphqljava/target/classes, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.0.RELEASE/spring-boot-starter-web-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.0.RELEASE/spring-boot-starter-logging-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, /home/corjan/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, /home/corjan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, /home/corjan/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, /home/corjan/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, /home/corjan/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/spring-jcl/5.1.2.RELEASE/spring-jcl-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.0.RELEASE/spring-boot-starter-json-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, /home/corjan/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, /home/corjan/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, /home/corjan/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, /home/corjan/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, /home/corjan/.m2/repository/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/spring-aop/5.1.2.RELEASE/spring-aop-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/spring-expression/5.1.2.RELEASE/spring-expression-5.1.2.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.0.RELEASE/spring-boot-starter-tomcat-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, /home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar, /home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.12/tomcat-embed-el-9.0.12.jar, /home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.12/tomcat-embed-websocket-9.0.12.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-devtools/2.1.0.RELEASE/spring-boot-devtools-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/com/graphql-java/graphql-java-tools/4.3.0/graphql-java-tools-4.3.0.jar, /home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.2.71/kotlin-stdlib-1.2.71.jar, /home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.71/kotlin-stdlib-common-1.2.71.jar, /home/corjan/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar, /home/corjan/.m2/repository/com/graphql-java/graphql-java/6.0/graphql-java-6.0.jar, /home/corjan/.m2/repository/org/antlr/antlr4-runtime/4.5.1/antlr4-runtime-4.5.1.jar, /home/corjan/.m2/repository/com/graphql-java/java-dataloader/2.0.1/java-dataloader-2.0.1.jar, /home/corjan/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.9.7/jackson-module-kotlin-2.9.7.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, /home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.2.71/kotlin-reflect-1.2.71.jar, /home/corjan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, /home/corjan/.m2/repository/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar, /home/corjan/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /home/corjan/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /home/corjan/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar, /home/corjan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, /home/corjan/.m2/repository/com/graphql-java/graphql-spring-boot-starter/4.0.0/graphql-spring-boot-starter-4.0.0.jar, /home/corjan/.m2/repository/com/graphql-java/graphql-spring-boot-autoconfigure/4.0.0/graphql-spring-boot-autoconfigure-4.0.0.jar, /home/corjan/.m2/repository/org/springframework/boot/spring-boot-configuration-processor/2.1.0.RELEASE/spring-boot-configuration-processor-2.1.0.RELEASE.jar, /home/corjan/.m2/repository/com/graphql-java/graphql-java-servlet/4.6.0/graphql-java-servlet-4.6.0.jar, /home/corjan/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar, /home/corjan/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar, /home/corjan/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar, /home/corjan/.m2/repository/com/graphql-java/graphiql-spring-boot-starter/4.0.0/graphiql-spring-boot-starter-4.0.0.jar, /home/corjan/.m2/repository/com/graphql-java/graphiql-spring-boot-autoconfigure/4.0.0/graphiql-spring-boot-autoconfigure-4.0.0.jar, /home/corjan/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar, /home/corjan/.m2/repository/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar]
+[[1;36mDEBUG[m]   (f) compileSourceRoots = [/home/corjan/graphqljava/src/main/java]
+[[1;36mDEBUG[m]   (f) compilerId = javac
+[[1;36mDEBUG[m]   (f) debug = true
+[[1;36mDEBUG[m]   (f) encoding = UTF-8
+[[1;36mDEBUG[m]   (f) failOnError = true
+[[1;36mDEBUG[m]   (f) failOnWarning = false
+[[1;36mDEBUG[m]   (f) forceJavacCompilerUse = false
+[[1;36mDEBUG[m]   (f) fork = false
+[[1;36mDEBUG[m]   (f) generatedSourcesDirectory = /home/corjan/graphqljava/target/generated-sources/annotations
+[[1;36mDEBUG[m]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile {execution: default-compile}
+[[1;36mDEBUG[m]   (f) optimize = false
+[[1;36mDEBUG[m]   (f) outputDirectory = /home/corjan/graphqljava/target/classes
+[[1;36mDEBUG[m]   (f) parameters = true
+[[1;36mDEBUG[m]   (f) project = MavenProject: graphql:graphqljava:1.0-SNAPSHOT @ /home/corjan/graphqljava/pom.xml
+[[1;36mDEBUG[m]   (f) projectArtifact = graphql:graphqljava:jar:1.0-SNAPSHOT
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@ad3324b
+[[1;36mDEBUG[m]   (f) showDeprecation = false
+[[1;36mDEBUG[m]   (f) showWarnings = false
+[[1;36mDEBUG[m]   (f) skipMultiThreadWarning = false
+[[1;36mDEBUG[m]   (f) source = 1.8
+[[1;36mDEBUG[m]   (f) staleMillis = 0
+[[1;36mDEBUG[m]   (s) target = 1.8
+[[1;36mDEBUG[m]   (f) useIncrementalCompilation = true
+[[1;36mDEBUG[m]   (f) verbose = false
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] Using compiler 'javac'.
+[[1;36mDEBUG[m] Adding /home/corjan/graphqljava/target/generated-sources/annotations to compile source roots:
+  /home/corjan/graphqljava/src/main/java
+[[1;36mDEBUG[m] New compile source roots:
+  /home/corjan/graphqljava/src/main/java
+  /home/corjan/graphqljava/target/generated-sources/annotations
+[[1;36mDEBUG[m] CompilerReuseStrategy: reuseCreated
+[[1;36mDEBUG[m] useIncrementalCompilation enabled
+[[1;36mDEBUG[m] Stale source detected: /home/corjan/graphqljava/src/main/java/nl/GraphqlProject/resolvers/Query.java
+[[1;36mDEBUG[m] Stale source detected: /home/corjan/graphqljava/src/main/java/nl/GraphqlProject/enums/Animal.java
+[[1;36mDEBUG[m] Stale source detected: /home/corjan/graphqljava/src/main/java/nl/GraphqlProject/GraphqlApplication.java
+[[1;36mDEBUG[m] Stale source detected: /home/corjan/graphqljava/src/main/java/nl/GraphqlProject/entities/Pet.java
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;36mDEBUG[m] Classpath:
+[[1;36mDEBUG[m]  /home/corjan/graphqljava/target/classes
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.0.RELEASE/spring-boot-starter-web-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.0.RELEASE/spring-boot-starter-logging-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-jcl/5.1.2.RELEASE/spring-jcl-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.0.RELEASE/spring-boot-starter-json-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-aop/5.1.2.RELEASE/spring-aop-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/spring-expression/5.1.2.RELEASE/spring-expression-5.1.2.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.0.RELEASE/spring-boot-starter-tomcat-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.12/tomcat-embed-el-9.0.12.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.12/tomcat-embed-websocket-9.0.12.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-devtools/2.1.0.RELEASE/spring-boot-devtools-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphql-java-tools/4.3.0/graphql-java-tools-4.3.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.2.71/kotlin-stdlib-1.2.71.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.71/kotlin-stdlib-common-1.2.71.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphql-java/6.0/graphql-java-6.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/antlr/antlr4-runtime/4.5.1/antlr4-runtime-4.5.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/java-dataloader/2.0.1/java-dataloader-2.0.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.9.7/jackson-module-kotlin-2.9.7.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.2.71/kotlin-reflect-1.2.71.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphql-spring-boot-starter/4.0.0/graphql-spring-boot-starter-4.0.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphql-spring-boot-autoconfigure/4.0.0/graphql-spring-boot-autoconfigure-4.0.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/springframework/boot/spring-boot-configuration-processor/2.1.0.RELEASE/spring-boot-configuration-processor-2.1.0.RELEASE.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphql-java-servlet/4.6.0/graphql-java-servlet-4.6.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphiql-spring-boot-starter/4.0.0/graphiql-spring-boot-starter-4.0.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/com/graphql-java/graphiql-spring-boot-autoconfigure/4.0.0/graphiql-spring-boot-autoconfigure-4.0.0.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar
+[[1;36mDEBUG[m]  /home/corjan/.m2/repository/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar
+[[1;36mDEBUG[m] Source roots:
+[[1;36mDEBUG[m]  /home/corjan/graphqljava/src/main/java
+[[1;36mDEBUG[m]  /home/corjan/graphqljava/target/generated-sources/annotations
+[[1;36mDEBUG[m] Command line options:
+[[1;36mDEBUG[m] -d /home/corjan/graphqljava/target/classes -classpath /home/corjan/graphqljava/target/classes:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.0.RELEASE/spring-boot-starter-web-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.0.RELEASE/spring-boot-starter-logging-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/corjan/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/corjan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar:/home/corjan/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar:/home/corjan/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/home/corjan/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/spring-jcl/5.1.2.RELEASE/spring-jcl-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.0.RELEASE/spring-boot-starter-json-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar:/home/corjan/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar:/home/corjan/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/home/corjan/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/corjan/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/home/corjan/.m2/repository/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/spring-aop/5.1.2.RELEASE/spring-aop-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/spring-expression/5.1.2.RELEASE/spring-expression-5.1.2.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.0.RELEASE/spring-boot-starter-tomcat-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar:/home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.12/tomcat-embed-el-9.0.12.jar:/home/corjan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.12/tomcat-embed-websocket-9.0.12.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-devtools/2.1.0.RELEASE/spring-boot-devtools-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/com/graphql-java/graphql-java-tools/4.3.0/graphql-java-tools-4.3.0.jar:/home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.2.71/kotlin-stdlib-1.2.71.jar:/home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.71/kotlin-stdlib-common-1.2.71.jar:/home/corjan/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/corjan/.m2/repository/com/graphql-java/graphql-java/6.0/graphql-java-6.0.jar:/home/corjan/.m2/repository/org/antlr/antlr4-runtime/4.5.1/antlr4-runtime-4.5.1.jar:/home/corjan/.m2/repository/com/graphql-java/java-dataloader/2.0.1/java-dataloader-2.0.1.jar:/home/corjan/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.9.7/jackson-module-kotlin-2.9.7.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/home/corjan/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.2.71/kotlin-reflect-1.2.71.jar:/home/corjan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar:/home/corjan/.m2/repository/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar:/home/corjan/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/corjan/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/home/corjan/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar:/home/corjan/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/corjan/.m2/repository/com/graphql-java/graphql-spring-boot-starter/4.0.0/graphql-spring-boot-starter-4.0.0.jar:/home/corjan/.m2/repository/com/graphql-java/graphql-spring-boot-autoconfigure/4.0.0/graphql-spring-boot-autoconfigure-4.0.0.jar:/home/corjan/.m2/repository/org/springframework/boot/spring-boot-configuration-processor/2.1.0.RELEASE/spring-boot-configuration-processor-2.1.0.RELEASE.jar:/home/corjan/.m2/repository/com/graphql-java/graphql-java-servlet/4.6.0/graphql-java-servlet-4.6.0.jar:/home/corjan/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/home/corjan/.m2/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar:/home/corjan/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar:/home/corjan/.m2/repository/com/graphql-java/graphiql-spring-boot-starter/4.0.0/graphiql-spring-boot-starter-4.0.0.jar:/home/corjan/.m2/repository/com/graphql-java/graphiql-spring-boot-autoconfigure/4.0.0/graphiql-spring-boot-autoconfigure-4.0.0.jar:/home/corjan/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/home/corjan/.m2/repository/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar: -sourcepath /home/corjan/graphqljava/src/main/java:/home/corjan/graphqljava/target/generated-sources/annotations: -s /home/corjan/graphqljava/target/generated-sources/annotations -g -parameters -nowarn -target 1.8 -source 1.8 -encoding UTF-8
+[[1;36mDEBUG[m] incrementalBuildHelper#beforeRebuildExecution
+[[1;34mINFO[m] Compiling 4 source files to /home/corjan/graphqljava/target/classes
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 4.770 s
+[[1;34mINFO[m] Finished at: 2018-11-17T11:58:56+01:00
+[[1;34mINFO[m] Final Memory: 28M/98M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m on project [36mgraphqljava[m: [1;31mFatal error compiling[m: java.lang.ExceptionInInitializerError: com.sun.tools.javac.code.TypeTags -> [1m[Help 1][m
+[1;31morg.apache.maven.lifecycle.LifecycleExecutionException[m: [1;31mFailed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m on project [36mgraphqljava[m: [1;31mFatal error compiling[m[m
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:213[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.executeForkedExecutions ([1mMojoExecutor.java:353[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:198[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:51[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:309[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:194[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:107[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:955[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:290[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:194[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:564[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: org.apache.maven.plugin.MojoExecutionException: [1;31mFatal error compiling[m
+    [1mat[m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute ([1mAbstractCompilerMojo.java:1140[m)
+    [1mat[m org.apache.maven.plugin.compiler.CompilerMojo.execute ([1mCompilerMojo.java:188[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:134[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.executeForkedExecutions ([1mMojoExecutor.java:353[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:198[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:51[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:309[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:194[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:107[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:955[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:290[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:194[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:564[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: org.codehaus.plexus.compiler.CompilerException: [1;31mjava.lang.ExceptionInInitializerError[m
+    [1mat[m org.codehaus.plexus.compiler.javac.JavaxToolsCompiler.compileInProcess ([1mJavaxToolsCompiler.java:173[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavacCompiler.performCompile ([1mJavacCompiler.java:174[m)
+    [1mat[m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute ([1mAbstractCompilerMojo.java:1129[m)
+    [1mat[m org.apache.maven.plugin.compiler.CompilerMojo.execute ([1mCompilerMojo.java:188[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:134[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.executeForkedExecutions ([1mMojoExecutor.java:353[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:198[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:51[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:309[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:194[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:107[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:955[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:290[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:194[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:564[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.RuntimeException: [1;31mjava.lang.ExceptionInInitializerError[m
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.handleExceptions ([1mJavacTaskImpl.java:158[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.doCall ([1mJavacTaskImpl.java:96[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.call ([1mJavacTaskImpl.java:90[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavaxToolsCompiler.compileInProcess ([1mJavaxToolsCompiler.java:126[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavacCompiler.performCompile ([1mJavacCompiler.java:174[m)
+    [1mat[m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute ([1mAbstractCompilerMojo.java:1129[m)
+    [1mat[m org.apache.maven.plugin.compiler.CompilerMojo.execute ([1mCompilerMojo.java:188[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:134[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.executeForkedExecutions ([1mMojoExecutor.java:353[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:198[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:51[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:309[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:194[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:107[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:955[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:290[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:194[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:564[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.ExceptionInInitializerError
+    [1mat[m lombok.javac.handlers.HandleGetter.<clinit> ([1mHandleGetter.java:303[m)
+    [1mat[m java.lang.Class.forName0 ([1mNative Method[m)
+    [1mat[m java.lang.Class.forName ([1mClass.java:374[m)
+    [1mat[m lombok.core.SpiLoadUtil$1$1.next ([1mSpiLoadUtil.java:111[m)
+    [1mat[m lombok.javac.HandlerLibrary.loadAnnotationHandlers ([1mHandlerLibrary.java:171[m)
+    [1mat[m lombok.javac.HandlerLibrary.load ([1mHandlerLibrary.java:156[m)
+    [1mat[m lombok.javac.JavacTransformer.<init> ([1mJavacTransformer.java:44[m)
+    [1mat[m lombok.javac.apt.LombokProcessor.init ([1mLombokProcessor.java:89[m)
+    [1mat[m lombok.core.AnnotationProcessor$JavacDescriptor.want ([1mAnnotationProcessor.java:87[m)
+    [1mat[m lombok.core.AnnotationProcessor.init ([1mAnnotationProcessor.java:140[m)
+    [1mat[m lombok.launch.AnnotationProcessorHider$AnnotationProcessor.init ([1mAnnotationProcessor.java:69[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment$ProcessorState.<init> ([1mJavacProcessingEnvironment.java:674[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment$DiscoveredProcessors$ProcessorStateIterator.next ([1mJavacProcessingEnvironment.java:771[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment.discoverAndRunProcs ([1mJavacProcessingEnvironment.java:866[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment.access$2100 ([1mJavacProcessingEnvironment.java:110[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run ([1mJavacProcessingEnvironment.java:1202[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing ([1mJavacProcessingEnvironment.java:1311[m)
+    [1mat[m com.sun.tools.javac.main.JavaCompiler.processAnnotations ([1mJavaCompiler.java:1250[m)
+    [1mat[m com.sun.tools.javac.main.JavaCompiler.compile ([1mJavaCompiler.java:928[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0 ([1mJavacTaskImpl.java:100[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.handleExceptions ([1mJavacTaskImpl.java:142[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.doCall ([1mJavacTaskImpl.java:96[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.call ([1mJavacTaskImpl.java:90[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavaxToolsCompiler.compileInProcess ([1mJavaxToolsCompiler.java:126[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavacCompiler.performCompile ([1mJavacCompiler.java:174[m)
+    [1mat[m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute ([1mAbstractCompilerMojo.java:1129[m)
+    [1mat[m org.apache.maven.plugin.compiler.CompilerMojo.execute ([1mCompilerMojo.java:188[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:134[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.executeForkedExecutions ([1mMojoExecutor.java:353[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:198[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:51[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:309[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:194[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:107[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:955[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:290[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:194[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:564[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.ClassNotFoundException: [1;31mcom.sun.tools.javac.code.TypeTags[m
+    [1mat[m java.lang.ClassLoader.findClass ([1mClassLoader.java:711[m)
+    [1mat[m java.lang.ClassLoader.loadClass ([1mClassLoader.java:566[m)
+    [1mat[m lombok.launch.ShadowClassLoader.loadClass ([1mShadowClassLoader.java:422[m)
+    [1mat[m java.lang.ClassLoader.loadClass ([1mClassLoader.java:499[m)
+    [1mat[m java.lang.Class.forName0 ([1mNative Method[m)
+    [1mat[m java.lang.Class.forName ([1mClass.java:291[m)
+    [1mat[m lombok.javac.JavacTreeMaker$SchroedingerType.getFieldCached ([1mJavacTreeMaker.java:156[m)
+    [1mat[m lombok.javac.JavacTreeMaker$TypeTag.typeTag ([1mJavacTreeMaker.java:245[m)
+    [1mat[m lombok.javac.Javac.<clinit> ([1mJavac.java:155[m)
+    [1mat[m lombok.javac.handlers.HandleGetter.<clinit> ([1mHandleGetter.java:303[m)
+    [1mat[m java.lang.Class.forName0 ([1mNative Method[m)
+    [1mat[m java.lang.Class.forName ([1mClass.java:374[m)
+    [1mat[m lombok.core.SpiLoadUtil$1$1.next ([1mSpiLoadUtil.java:111[m)
+    [1mat[m lombok.javac.HandlerLibrary.loadAnnotationHandlers ([1mHandlerLibrary.java:171[m)
+    [1mat[m lombok.javac.HandlerLibrary.load ([1mHandlerLibrary.java:156[m)
+    [1mat[m lombok.javac.JavacTransformer.<init> ([1mJavacTransformer.java:44[m)
+    [1mat[m lombok.javac.apt.LombokProcessor.init ([1mLombokProcessor.java:89[m)
+    [1mat[m lombok.core.AnnotationProcessor$JavacDescriptor.want ([1mAnnotationProcessor.java:87[m)
+    [1mat[m lombok.core.AnnotationProcessor.init ([1mAnnotationProcessor.java:140[m)
+    [1mat[m lombok.launch.AnnotationProcessorHider$AnnotationProcessor.init ([1mAnnotationProcessor.java:69[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment$ProcessorState.<init> ([1mJavacProcessingEnvironment.java:674[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment$DiscoveredProcessors$ProcessorStateIterator.next ([1mJavacProcessingEnvironment.java:771[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment.discoverAndRunProcs ([1mJavacProcessingEnvironment.java:866[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment.access$2100 ([1mJavacProcessingEnvironment.java:110[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run ([1mJavacProcessingEnvironment.java:1202[m)
+    [1mat[m com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing ([1mJavacProcessingEnvironment.java:1311[m)
+    [1mat[m com.sun.tools.javac.main.JavaCompiler.processAnnotations ([1mJavaCompiler.java:1250[m)
+    [1mat[m com.sun.tools.javac.main.JavaCompiler.compile ([1mJavaCompiler.java:928[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0 ([1mJavacTaskImpl.java:100[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.handleExceptions ([1mJavacTaskImpl.java:142[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.doCall ([1mJavacTaskImpl.java:96[m)
+    [1mat[m com.sun.tools.javac.api.JavacTaskImpl.call ([1mJavacTaskImpl.java:90[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavaxToolsCompiler.compileInProcess ([1mJavaxToolsCompiler.java:126[m)
+    [1mat[m org.codehaus.plexus.compiler.javac.JavacCompiler.performCompile ([1mJavacCompiler.java:174[m)
+    [1mat[m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute ([1mAbstractCompilerMojo.java:1129[m)
+    [1mat[m org.apache.maven.plugin.compiler.CompilerMojo.execute ([1mCompilerMojo.java:188[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:134[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.executeForkedExecutions ([1mMojoExecutor.java:353[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:198[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:51[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:309[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:194[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:107[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:955[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:290[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:194[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:564[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[[1;31mERROR[m] 
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

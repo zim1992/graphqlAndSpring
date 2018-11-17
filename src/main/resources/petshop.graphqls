@@ -1,0 +1,18 @@
+type Query {
+    pets: [Pet]
+    singlePet: Pet
+}
+
+type Pet {
+    id: String
+    type: Animal
+    name: String
+    age: Int
+}
+
+enum Animal {
+    Dog
+    Cat
+    Badger
+    Mammoth
+}
