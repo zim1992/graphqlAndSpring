@@ -27,6 +27,8 @@ public class Pet {
         this.age = age;
     }
 
+    public Pet (){}
+
 
     public static Pet Create(String name, Animal type, int age){
         return new Pet(name, type, age);

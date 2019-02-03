@@ -3,6 +3,10 @@ type Query {
     singlePet: Pet
 }
 
+type Mutation {
+    createPet(input: String!, age: Int!) : Pet!
+}
+
 type Pet {
     id: String
     type: Animal

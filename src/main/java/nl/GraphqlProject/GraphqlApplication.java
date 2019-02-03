@@ -18,11 +18,11 @@ public class GraphqlApplication{
         SpringApplication.run(GraphqlApplication.class, args);
     }
 
-    @Bean
-    CommandLineRunner runner(PetRepository repository){
-        return args -> {
-            repository.save(Pet.Create("Ben", Animal.Dog, 15 ));
-        };
-    }
+//    @Bean
+//    CommandLineRunner runner(PetRepository repository){
+//        return args -> {
+//            repository.save(Pet.Create("Ben", Animal.Dog, 15 ));
+//        };
+//    }
 
 }
